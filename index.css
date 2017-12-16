@@ -2,19 +2,14 @@ body {
     background-color: pink;
     overflow: auto;
 }
-@font-face {
-    font-family: my_font;
-    src: url(sansation_light.woff);
-}
+
 h1 {
-    font: my_font;
     text-align: center;
     font-size: 250px;
 }
 
 #images {
     display: flex;
-    image: center;
 }
 
 #frisbee {
