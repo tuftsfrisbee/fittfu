@@ -1,0 +1,36 @@
+body {
+    background-color: pink;
+    overflow: auto;
+}
+@font-face {
+    font-family: my_font;
+    src: url(sansation_light.woff);
+}
+h1 {
+    font: my_font;
+    text-align: center;
+    font-size: 250px;
+}
+
+#images {
+    display: flex;
+    image: center;
+}
+
+#frisbee {
+    background: none;
+    background-image: url('bluefris.png'), url('whitefris.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:-1;
+    animation: frisbee 10s linear infinite;
+}
+
+@keyframes frisbee {
+      0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+      50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+      100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}

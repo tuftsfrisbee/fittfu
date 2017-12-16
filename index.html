@@ -1,8 +1,39 @@
-<DOCTYPE>
+<!DOCTYPE html>
 <html>
-<head> 
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script>
+        var nicki = new Audio('Nicki Minaj - Anaconda.mp3');
+        function init(){
+            nicki.play();
+        }
+        function aeroplane(){
+            var aeroplane = new Audio('aeroplane.mp3');
+            aeroplane.play();
+            nicki.pause();
+        }
+    </script>
 </head>
-<body>
-        <h1> FRISBEE </h1>
+<body onload="init()">
+        <h1> FITTFU 2018 </h1>
+        <div id="frisbee"> </div>
+        <button onclick="aeroplane()"> Stop Music </button>
+        <h3>meet the commissioners: </h3>
+        <div id="images">
+            <img id="nancy" src="nancy.png"></img>
+            <img id="connor" src="connor.png"></img>
+            <img id="frank" src="frank.png"></img>
+            <img id="danny" src="danny.png"></img>
+            <ul>
+            <li> Honors: 1x cmen Player of the Offseason 2017 </li>
+            <li> Height: 49th Percentile, MEN, WHITE, US. Weight: Featherweight Div. </li>
+            <li>ighting out of: West Medford, MA.</li>
+            <li>Quotes: “I’m not crazy, I just do crazy things” </li>
+            <li>Bought a car for spring break apparently</li>
+            <li>Has a very, very firm handshake</li>
+            <li>Breaks a mirror once a month </li>
+            <li>Snores aggressively loud, sleep talks</li>
+        </ul>
+        </div>
 </body>
 </html>
